@@ -1,7 +1,8 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { router } from "next/client";
+import Link from "next/link";
+import { Coffee } from "lucide-react";
 
 export function NotFoundPage() {
   return (
@@ -20,19 +21,26 @@ export function NotFoundPage() {
 
             <div className="mt-[-50px]">
               <h3 className="text-2xl text-black sm:text-3xl font-bold mb-4">
-                Look like you're lost
+                Out of Credits, Not Out of Ideas!
               </h3>
               <p className="mb-6 text-black sm:mb-5">
-                The page you are looking for is not available!
+                This site took a nap because I ran out of cloud credits. Check back soon — or fund my caffeine and deployment budget 😉
               </p>
 
-              <Button
-                variant="default"
-                onClick={() => router.push("/")}
-                className="my-5 bg-green-600 hover:bg-green-700 "
-              >
-                Go to Home
-              </Button>
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-3">
+                <Link href="https://abhasbehera.vercel.app/" passHref>
+                  <Button className="bg-green-600 hover:bg-green-700 w-52">
+                    Go to Home
+                  </Button>
+                </Link>
+
+                <Link href="https://buymeacoffee.com/abhastheain" target="_blank" rel="noopener noreferrer">
+                  <Button className="bg-yellow-400 hover:bg-yellow-500 text-black w-52">
+                    <Coffee className="w-4 h-4 mr-2" />
+                    Buy Me a Coffee
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
