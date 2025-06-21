@@ -1,8 +1,9 @@
 # 404 – Temporary Page
 
-This is a placeholder page for my project, originally built using [Next.js](https://nextjs.org).
+This is a placeholder page for my project, originally built using [Next.js](https://nextjs.org).  
+➡️ **Live fallback page:** [404-Page](https://404-gold.vercel.app)
 
-Due to running out of cloud credits, the deployed version of the site is currently offline. Until I'm able to restore deployment, this fallback page will serve as the active endpoint.
+Due to running out of cloud credits, the deployed version of the main site is currently offline. Until I'm able to restore deployment, this fallback page will serve as the active endpoint.
 
 ## About This Project
 
@@ -25,4 +26,3 @@ You can still run the project locally:
 ```bash
 npm install
 npm run dev
-```
